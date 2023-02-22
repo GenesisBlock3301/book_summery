@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e17bc5e-1639-47e3-ad3f-d302981eafb7" name="Changes" comment="setup project" />
+    <list default="true" id="2e17bc5e-1639-47e3-ad3f-d302981eafb7" name="Changes" comment="setup project">
+      <change afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/accounts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/configurations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/configurations/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/configurations/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/configurations/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/configurations/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/summaries/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/views.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +93,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="book_summary" type="PythonConfigurationType" factoryName="Python">
       <module name="BookSummery" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677042630999</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="setup frontend directory">
+      <created>1677059946389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677059946389</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="setup project" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup project" />
+    <MESSAGE value="setup frontend directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup frontend directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
