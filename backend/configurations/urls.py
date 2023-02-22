@@ -9,7 +9,12 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Book Summery API",
         default_version="v1",
-        description="Your API description",
+        description="""
+        A book summary web app backend is a server-side component that provides functionality for a web application 
+        that allows users to search for and view summaries of books. The backend typically includes a database for 
+        storing book information, an API for querying the database and returning data to the frontend, and business
+         logic for handling user requests.
+        """,
         terms_of_service="https://your-terms-of-service.com",
         contact=openapi.Contact(email="contact@your-company.com"),
         license=openapi.License(name="BSD License"),
