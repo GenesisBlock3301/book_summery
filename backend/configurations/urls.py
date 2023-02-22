@@ -12,7 +12,7 @@ schema_view = get_schema_view(
         description="""
         A book summary web app backend is a server-side component that provides functionality for a web application 
         that allows users to search for and view summaries of books. The backend typically includes a database for 
-        storing book information, an API for querying the database and returning data to the frontend, and business
+        storing book information, an API for querying the database and returning data to the frontend_, and business
          logic for handling user requests.
         """,
         terms_of_service="https://your-terms-of-service.com",
