@@ -1,4 +1,5 @@
 import logging
+import re
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
@@ -6,6 +7,11 @@ logger = logging.getLogger(__name__)
 
 
 class UserManager(BaseUserManager):
+    @staticmethod
+    def is_valid_email(email):
+        email_regex = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        return re.match(email_regex, email) is not None
+
     def create_user(self, username=None, password=None):
         """
         Create general user method
@@ -13,15 +19,10 @@ class UserManager(BaseUserManager):
         if not username:
             raise ValueError('Email or Username must be specified!')
 
-        try:
+        if self.is_valid_email(username):
             user = self.model(email=self.normalize_email(username),)
-        except Exception as e:
-            try:
-                user = self.model(username=username)
-            except Exception as e:
-                logger.critical(str(e), exc_info=True)
-                raise ValueError('Credential error!')
-
+        else:
+            user = self.model(username=username)
         user.set_password(password)
         user.save(self._db)
         return user
@@ -75,5 +76,5 @@ class User(AbstractBaseUser):
         return self.is_superuser
 
     def __str__(self):
-        return self.email
+        return self.email if self.email else self.username
 
