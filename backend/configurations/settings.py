@@ -21,7 +21,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'drf_yasg',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -29,8 +28,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'drf_yasg',
     'accounts',
-    'socialauth'
+    'socialauth',
+    "summaries"
 ]
 # Authentication backend
 
@@ -130,7 +131,9 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ]
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'summaries.pagination.CustomPagination',
+    'PAGE_SIZE': 3,
 }
 
 LOGGING = {
@@ -152,3 +155,17 @@ LOGGING = {
         },
     },
 }
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'SIGNING_KEY': SECRET_KEY,
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True
+}
+

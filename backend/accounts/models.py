@@ -27,21 +27,16 @@ class UserManager(BaseUserManager):
         user.save(self._db)
         return user
 
-    def create_superuser(self, username=None, password=None):
+    def create_superuser(self, email: str, password: str):
         """
-        Create superuser method
+            Create superuser method
         """
-        if not username:
-            raise ValueError('Email or Username must be specified!')
+        if not email:
+            raise ValueError('Email must be specified!')
 
-        try:
-            user = self.model(email=self.normalize_email(username),)
-        except Exception as e:
-            try:
-                user = self.model(username=username)
-            except Exception as e:
-                logger.critical(str(e), exc_info=True)
-                raise ValueError('Credential error!')
+        user = self.model(
+            email=self.normalize_email(email),
+        )
         user.is_superuser = True
         user.is_staff = True
         user.set_password(password)
@@ -52,14 +47,15 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser):
     """Custom user model"""
     username = models.CharField(max_length=100, null=True)
-    email = models.EmailField(verbose_name='Email address', max_length=255, unique=True) 
+    email = models.EmailField(max_length=255, null=True, unique=True) 
     password = models.CharField(max_length=50)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
+    auth_provider = models.CharField(max_length=100, blank=True, default="self")
 
-    USERNAME_FIELD = 'email'
-
+    USERNAME_FIELD = "email"
+    
     class Meta:
         index_together = ("username", "email")
 
