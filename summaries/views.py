@@ -1,7 +1,6 @@
 from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.pagination import LimitOffsetPagination
 from drf_yasg.utils import swagger_auto_schema
 from .serializers import SummarySerializer
 from summaries.schema.list_of_summary_schema import summary_response, summary_query_params

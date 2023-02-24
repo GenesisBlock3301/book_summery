@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="setup schema and authentication with swagger">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/backends.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/schema/authentication_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/schema/list_of_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/google.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/register.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/schemas/social_auth_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/socialauth/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/pagination.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/schema/list_of_summary_schema.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/views.py" beforeDir="false" />
-    </list>
+    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="setup schema and authentication with swagger" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bs815/Desktop/BookSummery/backend/configurations/settings.py&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/bs815/Desktop/BookSummery/backend/configurations/settings.py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="backend" />
@@ -224,7 +178,6 @@
       <workItem from="1677143216579" duration="1514000" />
       <workItem from="1677144742849" duration="58000" />
       <workItem from="1677144811850" duration="21158000" />
-      <workItem from="1677198825269" duration="118000" />
     </task>
     <task id="LOCAL-00001" summary="reformat project structure">
       <created>1677044309299</created>
@@ -300,6 +253,16 @@
           <url>file://$PROJECT_DIR$/socialauth/schemas/social_auth_schema.py</url>
           <line>23</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/accounts/views.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/accounts/views.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
