@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="change file structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/schema/list_of_summary_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/schema/list_of_summary_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/summaries/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/urls.py" afterDir="false" />
+    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="refactoring and add comment schema">
       <change beforePath="$PROJECT_DIR$/summaries/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +180,7 @@
       <workItem from="1677143216579" duration="1514000" />
       <workItem from="1677144742849" duration="58000" />
       <workItem from="1677144811850" duration="21158000" />
-      <workItem from="1677198944094" duration="12662000" />
+      <workItem from="1677198944094" duration="16662000" />
     </task>
     <task id="LOCAL-00001" summary="reformat project structure">
       <created>1677044309299</created>
@@ -242,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677199471569</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactoring and add comment schema">
+      <created>1677226936287</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677226936287</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,22 +269,7 @@
     <MESSAGE value="social auth integration" />
     <MESSAGE value="setup schema and authentication with swagger" />
     <MESSAGE value="change file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="change file structure" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="refactoring and add comment schema" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring and add comment schema" />
   </component>
 </project>

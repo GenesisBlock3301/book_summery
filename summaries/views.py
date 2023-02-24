@@ -4,7 +4,8 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from drf_yasg.utils import swagger_auto_schema
-from .serializers import SummarySerializer, GetAllDetailSummarySerializer, CreateCommentSerializer
+from .serializers import SummarySerializer, GetAllDetailSummarySerializer, CreateCommentSerializer,\
+    CreateReplySerializer, CommentSerializer, ReplySerializer
 from summaries.schema.summary_schema import summary_response, summary_query_params,\
     single_summary_response
 from summaries.schema.comment_schema import comment_schema_body
@@ -52,7 +53,7 @@ class SummaryApiView(APIView):
         # Send queryset to paginator.
         result_page = paginator.get_queryset(data=query_set, request=request)
         # Again result page send to pagination for further response
-        serializer = GetAllDetailSummarySerializer(result_page, many=True)
+        serializer = SummarySerializer(result_page, many=True)
         return paginator.get_response(serializer.data)
 
 
@@ -61,12 +62,29 @@ class CreateCommentAPIView(APIView):
     def post(self, request):
         try:
             data = request.data
-            comment = Comment.objects.create(data)
-            comment.save()
-            Response({"status": "post create successful"}, status=status.HTTP_200_OK)
+            serializer = CommentSerializer(data=data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                Response({"status": "post create successful"}, status=status.HTTP_200_OK)
+            return Response({"error": "post create failed"}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             logger.critical(str(e), exc_info=True)
             return Response({"error": "post create failed"}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class CreateReplyAPIView(APIView):
+    @swagger_auto_schema(request_body=comment_schema_body)
+    def post(self, request):
+        try:
+            data = request.data
+            serializer = ReplySerializer(data=data)
+            if serializer.is_valid(raise_exception=True):
+                serializer.save()
+                Response({"status": "reply create successful"}, status=status.HTTP_200_OK)
+            return Response({"error": "reply create failed"}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            logger.critical(str(e), exc_info=True)
+            return Response({"error": "reply create failed"}, status=status.HTTP_400_BAD_REQUEST)
 
 
 class UpdateCommentAPIView(APIView):
@@ -77,7 +95,22 @@ class UpdateCommentAPIView(APIView):
         except Comment.DoesNotExist:
             return Response(status=status.HTTP_404_NOT_FOUND)
 
-        serializer = CreateCommentSerializer(obj, data=request.data)
+        serializer = CommentSerializer(obj, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UpdateReplyAPIView(APIView):
+    @swagger_auto_schema(request_body=comment_schema_body)
+    def put(self, request, pk):
+        try:
+            obj = Reply.objects.get(pk=pk)
+        except Reply.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+        serializer = ReplySerializer(obj, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)

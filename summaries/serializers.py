@@ -43,3 +43,8 @@ class CreateCommentSerializer(serializers.ModelSerializer):
         model = Comment
         fields = ["user", "summary", "comment_content"]
 
+
+class CreateReplySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = ["user", "comment", "reply_content"]
