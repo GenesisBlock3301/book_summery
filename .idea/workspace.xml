@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="setup schema and authentication with swagger" />
+    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="change file structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/schema/list_of_summary_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/schema/list_of_summary_schema.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/summaries/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/summaries/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,12 +51,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/bs815/Desktop/BookSummery/backend/configurations/settings.py",
+    "last_opened_file_path": "/home/bs815/Desktop/BookSummery/configurations/settings.py",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -123,7 +129,7 @@
       <method v="2" />
     </configuration>
     <configuration name="backend" type="Python.DjangoServer" factoryName="Django server">
-      <module name="backend" />
+      <module name="BookSummery" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -146,7 +152,7 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
       </EXTENSION>
-      <option name="launchJavascriptDebuger" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
@@ -178,6 +184,7 @@
       <workItem from="1677143216579" duration="1514000" />
       <workItem from="1677144742849" duration="58000" />
       <workItem from="1677144811850" duration="21158000" />
+      <workItem from="1677198944094" duration="12662000" />
     </task>
     <task id="LOCAL-00001" summary="reformat project structure">
       <created>1677044309299</created>
@@ -221,7 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677171331570</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change file structure">
+      <created>1677199416540</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677199416540</updated>
+    </task>
+    <task id="LOCAL-00008" summary="change file structure">
+      <created>1677199471569</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677199471569</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,16 +265,12 @@
     <MESSAGE value="validate email" />
     <MESSAGE value="social auth integration" />
     <MESSAGE value="setup schema and authentication with swagger" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup schema and authentication with swagger" />
+    <MESSAGE value="change file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="change file structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/socialauth/schemas/social_auth_schema.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
           <line>34</line>
