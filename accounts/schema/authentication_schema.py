@@ -18,3 +18,14 @@ user_register_schema = {
         schema=user_register_schema_body
     ),
 }
+
+
+user_login_schema_body = openapi.Schema(
+    name='body',
+    description="User Login",
+    type=openapi.TYPE_OBJECT,
+    properties={
+        "email": openapi.Schema(type=openapi.TYPE_STRING),
+        'password': openapi.Schema(type=openapi.TYPE_STRING)
+    }
+)

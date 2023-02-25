@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="adding reply functionality">
+    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="email verification functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/backends.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/schema/authentication_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/schema/authentication_schema.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,7 +187,7 @@
       <workItem from="1677144811850" duration="21158000" />
       <workItem from="1677198944094" duration="16662000" />
       <workItem from="1677253593905" duration="8513000" />
-      <workItem from="1677286458052" duration="7431000" />
+      <workItem from="1677286458052" duration="13614000" />
     </task>
     <task id="LOCAL-00001" summary="reformat project structure">
       <created>1677044309299</created>
@@ -263,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677254900722</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="email verification functionality">
+      <created>1677294454181</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677294454181</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,24 +292,25 @@
     <MESSAGE value="change file structure" />
     <MESSAGE value="refactoring and add comment schema" />
     <MESSAGE value="adding reply functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding reply functionality" />
+    <MESSAGE value="email verification functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="email verification functionality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>39</line>
+          <line>48</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>43</line>
+          <line>52</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>42</line>
+          <line>51</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
