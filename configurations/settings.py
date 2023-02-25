@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'accounts',
     'socialauth',
-    "summaries"
+    "summaries",
 ]
 # Authentication backend
 
@@ -120,7 +120,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'rest_framework.authentication.TokenAuthentication',
-    'accounts.backends.EmailOrUsernameModelBackend',
 ]
 
 REST_FRAMEWORK = {
@@ -133,7 +132,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_PAGINATION_CLASS': 'summaries.pagination.CustomPagination',
-    'PAGE_SIZE': 3,
+    'PAGE_SIZE': 10,
 }
 
 LOGGING = {
@@ -162,10 +161,16 @@ CORS_ORIGIN_ALLOW_ALL = True
 from datetime import timedelta
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
     'SIGNING_KEY': SECRET_KEY,
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True
 }
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "freelancersifat380@gmail.com"
+EMAIL_HOST_PASSWORD = "yyldnadeqjkdbudj"

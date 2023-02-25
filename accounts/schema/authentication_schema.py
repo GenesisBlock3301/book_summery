@@ -5,9 +5,9 @@ user_register_schema_body = openapi.Schema(
     description="User Register",
     type=openapi.TYPE_OBJECT,
     properties={
+        "email": openapi.Schema(type=openapi.TYPE_STRING),
         "username": openapi.Schema(type=openapi.TYPE_STRING),
-        'password1': openapi.Schema(type=openapi.TYPE_STRING),
-        'password2': openapi.Schema(type=openapi.TYPE_STRING),
+        'password': openapi.Schema(type=openapi.TYPE_STRING)
     }
 )
 
