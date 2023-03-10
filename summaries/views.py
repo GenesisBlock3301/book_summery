@@ -4,10 +4,8 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from drf_yasg.utils import swagger_auto_schema
-from .serializers import SummarySerializer, GetAllDetailSummarySerializer, CreateCommentSerializer,\
-    CreateReplySerializer, CommentSerializer, ReplySerializer
-from summaries.schema.summary_schema import summary_response, summary_query_params,\
-    single_summary_response
+from .serializers import SummarySerializer, GetAllDetailSummarySerializer, CommentSerializer, ReplySerializer
+from summaries.schema.summary_schema import summary_response, single_summary_response
 from summaries.schema.comment_schema import comment_schema_body
 from .models import Summary, Comment, Reply
 from .pagination import CustomPagination

@@ -2,6 +2,8 @@ import os
 import random
 from django.contrib.auth import authenticate
 from django.db.models import Q
+from rest_framework.exceptions import AuthenticationFailed
+
 from accounts.models import User
 
 

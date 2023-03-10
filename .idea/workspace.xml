@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="email verification functionality">
+    <list default="true" id="4454c614-b071-4229-b8ae-353f1ffaf838" name="Changes" comment="login and password reset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/schema/authentication_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/schema/authentication_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configurations/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configurations/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/configurations/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,10 +152,10 @@
         </ENTRIES>
       </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
+      <option name="port" value="8080" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="browserUrl" value="http://127.0.0.1:8080/" />
       <option name="runTestServer" value="false" />
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
@@ -187,7 +185,14 @@
       <workItem from="1677144811850" duration="21158000" />
       <workItem from="1677198944094" duration="16662000" />
       <workItem from="1677253593905" duration="8513000" />
-      <workItem from="1677286458052" duration="13614000" />
+      <workItem from="1677286458052" duration="13854000" />
+      <workItem from="1677424851261" duration="430000" />
+      <workItem from="1677425828035" duration="601000" />
+      <workItem from="1677491456590" duration="1114000" />
+      <workItem from="1677833245080" duration="1577000" />
+      <workItem from="1677840506898" duration="3581000" />
+      <workItem from="1677898417789" duration="9000" />
+      <workItem from="1678366353106" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="reformat project structure">
       <created>1677044309299</created>
@@ -266,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677294454181</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="login and password reset">
+      <created>1677301250533</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677301250533</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,24 +305,25 @@
     <MESSAGE value="refactoring and add comment schema" />
     <MESSAGE value="adding reply functionality" />
     <MESSAGE value="email verification functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="email verification functionality" />
+    <MESSAGE value="login and password reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="login and password reset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/accounts/views.py</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

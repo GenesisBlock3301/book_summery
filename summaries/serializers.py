@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
-from accounts.serializers import UserSerializer
 from .models import Summary, Reply, Comment, Author
 
 

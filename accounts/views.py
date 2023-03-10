@@ -30,7 +30,6 @@ logger = logging.getLogger(__name__)
 
 
 class CustomRedirect(HttpResponsePermanentRedirect):
-
     allowed_schemes = [os.environ.get('APP_SCHEME'), 'http', 'https']
 
 
@@ -124,7 +123,7 @@ class RequestPasswordResetEmail(generics.GenericAPIView):
             redirect_url = request.data.get("redirect_url", '')
             absurl = f"http://{current_site}{relative_link}"
             email_body = 'Hello, \n Use link below to reset your password  \n' + \
-                         absurl+"?redirect_url="+redirect_url
+                         absurl + "?redirect_url=" + redirect_url
             data = {'email_body': email_body, 'to_email': user.email,
                     'email_subject': 'Reset your password'}
             Utils.send_email(data)
@@ -144,20 +143,20 @@ class ResetPasswordTokenApiCheck(generics.GenericAPIView):
             if not PasswordResetTokenGenerator().check_token(user, token):
                 if len(redirect_url) > 3:
                     # redirect to custom schem based url
-                    return CustomRedirect(redirect_url+'?token_valid=False')
+                    return CustomRedirect(redirect_url + '?token_valid=False')
                 else:
-                    return CustomRedirect(os.environ.get("FRONTEND_URL", '')+"?token_valid=False")
-            if redirect_url and len(redirect_url)>3:
-                return CustomRedirect(redirect_url+"?token_valid=True&message=Credentials Valid&uidb64="
-                                      +uidb64+"&token="+token)
+                    return CustomRedirect(os.environ.get("FRONTEND_URL", '') + "?token_valid=False")
+            if redirect_url and len(redirect_url) > 3:
+                return CustomRedirect(redirect_url + "?token_valid=True&message=Credentials Valid&uidb64="
+                                      + uidb64 + "&token=" + token)
             else:
-                return CustomRedirect(os.environ.get('FRONTEND_URL', '')+'?token_valid=False')
+                return CustomRedirect(os.environ.get('FRONTEND_URL', '') + '?token_valid=False')
         except DjangoUnicodeDecodeError:
             try:
                 _id = smart_str(urlsafe_base64_decode(uidb64))
                 user = User.objects.get(id=_id)
                 if not PasswordResetTokenGenerator().check_token(user, token):
-                    return CustomRedirect(redirect_url+'?token_valid=False')
+                    return CustomRedirect(redirect_url + '?token_valid=False')
             except UnboundLocalError as e:
                 return Response({'error': 'Token is not valid, please request a new one'},
                                 status=status.HTTP_400_BAD_REQUEST)
