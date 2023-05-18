@@ -48,6 +48,3 @@ class Reply(Common):
 
     def __str__(self):
         return str(self.id)+" "+str(self.user.id)
-    
-    
-    
