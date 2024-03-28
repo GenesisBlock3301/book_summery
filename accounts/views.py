@@ -24,6 +24,7 @@ from .serializers import UserSerializer
 from .serializers import RegistrationSerializer, LoginSerializer, ResetPasswordEmailRequestSerializer, \
     SetNewPasswordSerializer, LogoutSerializer
 from .schema.list_of_user import list_of_user_response
+from .tasks import send_email_confirmation
 
 User = get_user_model()
 logger = logging.getLogger(__name__)
@@ -58,7 +59,8 @@ class RegistrationView(generics.GenericAPIView):
             "email_body": email_body, "to_email": user.email,
             "email_subject": "Verify your email"
         }
-        Utils.send_email(data)
+        # use celery for handling background task.
+        send_email_confirmation.delay(data)
         return Response(user_data, status=status.HTTP_201_CREATED)
 
 
